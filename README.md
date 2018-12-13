@@ -1,6 +1,6 @@
 # vue-seed
 
-> a vue.js seed project
+> 一个基于vue-cli脚手架生成的，集成pug/scss语法支持的vue种子项目。内置了工具类、vuex，以及自动引入全局组件的功能。
 
 ## Build Setup
 
