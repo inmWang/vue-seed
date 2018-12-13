@@ -1,0 +1,37 @@
+//宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+//字体大小，颜色
+@mixin sc($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+//多行文本溢出省略
+@mixin ellipsis($num) {
+  display: -webkit-box;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: $num;
+  overflow: hidden;
+}
+
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+//定位上下左右居中
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
